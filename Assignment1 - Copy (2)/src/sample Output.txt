@@ -1,0 +1,77 @@
+
+Note: the actual moves could be different, but the total number of moves needs to be the same (as there is only one optimal).
+
+The number of states expanded will be different based on what (optional) optimizations you do. 
+
+For example, if you stop as soon as you generate a solution (rather than wait until you pull it off of the queue), that will decrease expansions.
+
+If you make sure you don't expand the same state twice, that will help a lot.
+***************************
+
+SOLUTION  of Depth 5 Total Nodes Put On the Queue 16583
+
+Move Jam-1  [0]
++-------------+
+| . . 1 . 2 2 | 
+| . . 1 3 4 . | 
+| . 0 0 3 4 .   
+| . . . 3 5 5 | 
+| . . . . . . | 
+| . . . . . . | 
++-------------+ HashCode 28749311
+
+
+Move Jam-1  C3.0 [1]
++-------------+
+| . . 1 3 2 2 | 
+| . . 1 3 4 . | 
+| . 0 0 3 4 .   
+| . . . . 5 5 | 
+| . . . . . . | 
+| . . . . . . | 
++-------------+ HashCode 28748350
+
+
+Move Jam-1  C3.0 C5.1 [2]
++-------------+
+| . . 1 3 2 2 | 
+| . . 1 3 4 . | 
+| . 0 0 3 4 .   
+| . 5 5 . . . | 
+| . . . . . . | 
+| . . . . . . | 
++-------------+ HashCode 28748347
+
+
+Move Jam-1  C3.0 C5.1 C3.3 [3]
++-------------+
+| . . 1 . 2 2 | 
+| . . 1 . 4 . | 
+| . 0 0 . 4 .   
+| . 5 5 3 . . | 
+| . . . 3 . . | 
+| . . . 3 . . | 
++-------------+ HashCode 28751230
+
+
+Move Jam-1  C3.0 C5.1 C3.3 C4.3 [4]
++-------------+
+| . . 1 . 2 2 | 
+| . . 1 . . . | 
+| . 0 0 . . .   
+| . 5 5 3 4 . | 
+| . . . 3 4 . | 
+| . . . 3 . . | 
++-------------+ HashCode 28751292
+
+
+Move Jam-1  C3.0 C5.1 C3.3 C4.3 C0.5 [5]
++-------------+
+| . . 1 . 2 2 | 
+| . . 1 . . . | 
+| . . . . . 0   
+| . 5 5 3 4 . | 
+| . . . 3 4 . | 
+| . . . 3 . . | 
++-------------+ HashCode 143267896
+
